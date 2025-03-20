@@ -1,7 +1,7 @@
 public class Conversion {
         public static void main(String[] args) {
-        System.out.println("Feet to Meters | Meters to Feet");
-        System.out.println("--------------------------------");
+        System.out.println("     Feet to Meters | Meters to Feet");
+        System.out.println("--------------------------------------------");
         System.out.printf("%-10s %-10s | %-10s %-10s\n", "Feet", "Meters", "Meters", "Feet");
         
             for (int i = 1, j = 20; i <= 10; i++, j += 5) {
