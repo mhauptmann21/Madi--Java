@@ -77,19 +77,23 @@ public abstract class GeometricObject {
 *********************************************************/
 
 class Triangle extends GeometricObject{
+  // intializing data fields
   private double side1 = 1.0;
   private double side2 = 1.0;
   private double side3 = 1.0;
 
+  // no-arg constructor that creates a default triangle
   public Triangle() {
   }
 
+  // constructor that creates a triangle with specified sides
   public Triangle (double side1, double side2, double side3){
     this.side1 = side1;
     this.side2 = side2;
     this.side3 = side3;
   }
 
+  // the accessor methods for the three data fields
   public double getSide1(){
     return side1;
   }
@@ -102,17 +106,20 @@ class Triangle extends GeometricObject{
     return side3;
   }
 
+  //method that returns the area of the triangle
   public double getArea(){
     double s = (side1 + side2 + side3)/2;
     double area = Math.sqrt(s*(s - side1) * (s - side2) * (s - side3));
     return area;
   }
 
+  // method that returns the perimeter of the triangle
   public double getPerimeter(){
     double perimeter = side1 + side2 + side3;
     return perimeter;
   }
 
+  // method that returns a string decription for the triangle
   public String toString(){
     return "Triangle: side1 = " + side1 + " side2 = " + side2 + " side3 = " + side3;
   }
