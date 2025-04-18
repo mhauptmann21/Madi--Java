@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "java",
+        "name": "Exercise_14_01",
+        "request": "launch",
+        "mainClass": "Exercise_14_01",
+        "projectName": "Exercise-14-01_85b59bd3"
+      },
+      {
+        "type": "java",
+        "name": "ImageGridExample",
+        "request": "launch",
+        "mainClass": "ImageGridExample",
+        "projectName": "Exercise-14-01_85b59bd3",
+        "vmArgs": "--module-path /Users/madisonhauptmann/Documents/javafx-sdk-17.0.15/lib --add-modules javafx.controls,javafx.fxml"
+      },
+      {
+        "type": "java",
+        "name": "App",
+        "request": "launch",
+        "mainClass": "App",
+        "projectName": "Exercise-14-01_85b59bd3"
+      }
+    ]
+  } 
