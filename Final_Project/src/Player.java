@@ -20,7 +20,7 @@ public class Player {
         System.out.println("---------------------------------------");
         System.out.println("It is time... choose who you will be.");
         for (Character c : charList) {
-            System.out.println(c.getName() + "Damage: " + c.getDamage() + ", Health: " + c.getHealth() + ", Money: " + c.getMoney());
+            System.out.println(c.getName() + " Damage: " + c.getDamage() + ", Health: " + c.getHealth() + ", Money: " + c.getMoney());
         }
         System.out.println("---------------------------------------");
         System.out.println("Samurai - 1");
@@ -48,24 +48,24 @@ public class Player {
     public void initPlayer(Character character) {
         this.setCharacterName(character.getName());
         this.setDamage(character.getDamage());
-        this.setHealth(character.getHealth());
+        this.sethealth(character.getHealth());
         this.setDefaultHealth(character.getHealth());
         this.setMoney(character.getMoney());
     }
 
     public void printInfo() {
         System.out.println(this.getName() + " -" + this.getCharacterName() + "-" + "(Your Weapon: " +
-                this.getInventory().getGun().getName() + ", Attack Power: " + this.getTotalDamage() +
-                ", Your Armor: " + this.getInventory().getArmor().getName() + ", Bloacking Power: " +
+                this.getInventory().getBow().getName() + ", Attack Power: " + this.getTotalDamage() +
+                ", Your Armor: " + this.getInventory().getArmor().getName() + ", Blocking Power: " +
                 this.getInventory().getArmor().getBlock() + ", Your Health: " + this.getMoney() + ")");
     }
 
     public int getTotalDamage() {
-        return this.damage + this.getInventory().getGen().getDamage();
+        return this.damage + this.getInventory().getBow().getDamage();
     }
 
     public int getDamage() {
-        return this.damage + this.getInventory().getGun().getDamage();
+        return this.damage + this.getInventory().getBow().getDamage();
     }
 
     public void setDamage(int damge) {

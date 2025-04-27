@@ -1,19 +1,19 @@
 
 public class Inventory {
-    private Gun gun;
+    private Bow bow;
     private Armor armor;
 
     public Inventory() {
-        this.gun = new Gun("Fists", -1, 1, 0);
+        this.bow = new Bow("Fists", -1, 1, 0);
         this.armor = new Armor("None", -1, 0, 0);
     }
 
-    public Gun getGun() {
-        return this.gun;
+    public Bow getBow() {
+        return this.bow;
     }
 
-    public void setGun(Gun gun) {
-        this.gun = gun;
+    public void setBow(Bow bow) {
+        this.bow = bow;
     }
 
     public Armor getArmor() {

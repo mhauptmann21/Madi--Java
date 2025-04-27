@@ -9,14 +9,14 @@ public class Game {
         System.out.println("Do you know your name?");
         System.out.println("Enter now: ");
         String name = input.nextLine();
-        Player playerName = new Player(name);
-        System.out.println("It's nice to meet you, " + playerName.getName() + "!");
+        Player player = new Player(name);
+        System.out.println("It's nice to meet you, " + player.getName() + "!");
         System.out.println("I am your guide! It is now time for you to choose who you will become.");
-        playerName.selectChar();
+        player.selectChar();
         Location location;
         while (true) {
             System.out.println("---------------------------------------");
-            playerName.printInfo();
+            player.printInfo();
             System.out.println("---------------------------------------");
             System.out.println("I know you just woke up, but our people are in grave danger. We need your help.");
             System.out.println("Monsters are taking over the lands, and must be put to an end.");
